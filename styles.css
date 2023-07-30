@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 900px;
-  height: 800px;
+  height: 700px;
   position: relative;
   border: solid;
 }
@@ -173,7 +173,7 @@ body {
 }
 
 .game-container {
-  margin-top: 100px;
+  margin-top: 40px;
   padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
