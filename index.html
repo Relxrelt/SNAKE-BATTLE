@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SNAKE BATTLE</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="ui-container">
+            <div class="waiting-screen">
+                <div class="waiting-screen-text">Waiting for another player...</div>
+                <button class="waiting-screen-button">READY</button>
+                <div class="room-id-container">ROOM ID:</div>
+            </div>
+            <div class="room-logic">
+                <div class="room-buttons">
+                    <button class="create-room-button">CREATE NEW ROOM WITH
+                        RANDOM ID</button>
+                    <button class="join-room-button">JOIN ROOM:</button>
+                    <input class="join-room-input" type="text"
+                        placeholder="Room ID">
+                </div>
+            </div>
+            <div class="score-board">
+                <div class="your-scores">
+                    <p class="your-match-score">0</p>
+                    <p class="your-snake-score">0</p>
+                </div>
+                <p class="game-title">SNAKE BATTLE</p>
+                <div class="opponent-scores">
+                    <p class="opponent-snake-score">0</p>
+                    <p class="opponent-match-score">0</p>
+                </div>
+            </div>
+            <div class="game-container"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

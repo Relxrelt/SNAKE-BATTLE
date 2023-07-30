@@ -1,0 +1,201 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ui-container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 800px;
+  position: relative;
+  border: solid;
+}
+
+.waiting-screen {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(141, 137, 137, 0.6);
+  display: none;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.waiting-screen-text {
+  margin-top: 350px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.waiting-screen-button {
+  display: none;
+  padding: 10px;
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-color: rgb(228, 169, 8);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.waiting-screen-button:hover {
+  opacity: 0.8;
+}
+
+.waiting-screen-button:active {
+  opacity: 0.6;
+}
+
+.room-id-container {
+  background-color: white;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.room-logic {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(141, 137, 137, 0.6);
+}
+
+.room-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.create-room-button {
+  margin-right: 8px;
+  padding: 8px;
+  background-color: rgb(29, 197, 29);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 130px;
+  height: 70px;
+  transition: opacity 0.2s;
+}
+
+.join-room-button {
+  margin-right: 8px;
+  padding: 8px;
+  background-color: rgb(247, 182, 6);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 130px;
+  height: 70px;
+  transition: opacity 0.2s;
+}
+
+.create-room-button:hover,
+.join-room-button:hover {
+  opacity: 0.8;
+}
+
+.create-room-button:active,
+.join-room-button:active {
+  opacity: 0.6;
+}
+.join-room-input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.score-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 0);
+  height: 90px;
+  border-bottom: solid;
+}
+.your-scores,
+.opponent-scores {
+  display: flex;
+  flex-direction: row;
+}
+
+.opponent-match-score,
+.your-match-score {
+  width: 80px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 80px;
+  font-weight: bold;
+  background-color: white;
+}
+.your-match-score,
+.your-snake-score {
+  border-right: solid;
+}
+
+.opponent-match-score,
+.opponent-snake-score {
+  border-left: solid;
+}
+.your-snake-score,
+.opponent-snake-score {
+  width: 80px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+.game-title {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+.game-container {
+  margin-top: 100px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 5px; /* Adjust the gap value as desired */
+  width: 500px; /* Adjust the width of the container as desired */
+  height: 500px; /* Adjust the height of the container as desired */
+  margin-left: 150px;
+}
+
+.tile {
+  background-color: rgb(0, 0, 0); /* Add any styles you want for the tile */
+}
+
+.E {
+  background-color: lightgray;
+}
+
+.S {
+  background-color: gold;
+}
+
+.F {
+  background-color: red;
+}
